@@ -83,7 +83,7 @@ struct RecipeView: View {
                     .italic()
                     .foregroundColor(.text)
             }
-            .frame(width: 260.0)
+            .frame(width: 250.0)
             VStack {
                 Spacer()
                 Text(recipe.calories)
