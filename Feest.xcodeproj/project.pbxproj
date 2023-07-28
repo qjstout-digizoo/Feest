@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		FCDBC6792A690AF30012D971 /* FeestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6782A690AF30012D971 /* FeestApp.swift */; };
-		FCDBC67B2A690AF30012D971 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC67A2A690AF30012D971 /* ContentView.swift */; };
+		FCDBC67B2A690AF30012D971 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC67A2A690AF30012D971 /* RecipeView.swift */; };
 		FCDBC67D2A690AF50012D971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDBC67C2A690AF50012D971 /* Assets.xcassets */; };
 		FCDBC6802A690AF50012D971 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */; };
+		FCDBC6882A690BDA0012D971 /* Stitch in Frameworks */ = {isa = PBXBuildFile; productRef = FCDBC6872A690BDA0012D971 /* Stitch */; };
+		FCDBC6962A6919180012D971 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6952A6919180012D971 /* API.swift */; };
+		FCDBC69F2A6928150012D971 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC69E2A6928150012D971 /* RecipeModel.swift */; };
+		FCDBC6A52A6954D70012D971 /* RecipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6A42A6954D70012D971 /* RecipeStore.swift */; };
+		FCDBC6AA2A70BDA10012D971 /* RecipeStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6A92A70BDA10012D971 /* RecipeStoring.swift */; };
+		FCDBC6AD2A725BF60012D971 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6AC2A725BF60012D971 /* Color.swift */; };
+		FCDBC6B12A725CF00012D971 /* ColorTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B02A725CF00012D971 /* ColorTokens.swift */; };
+		FCDBC6B32A736F5B0012D971 /* BackgroundWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCDBC6752A690AF30012D971 /* Feest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDBC6782A690AF30012D971 /* FeestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeestApp.swift; sourceTree = "<group>"; };
-		FCDBC67A2A690AF30012D971 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCDBC67A2A690AF30012D971 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		FCDBC67C2A690AF50012D971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCDBC6952A6919180012D971 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FCDBC69E2A6928150012D971 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		FCDBC6A42A6954D70012D971 /* RecipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStore.swift; sourceTree = "<group>"; };
+		FCDBC6A92A70BDA10012D971 /* RecipeStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStoring.swift; sourceTree = "<group>"; };
+		FCDBC6AC2A725BF60012D971 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FCDBC6B02A725CF00012D971 /* ColorTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTokens.swift; sourceTree = "<group>"; };
+		FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDBC6882A690BDA0012D971 /* Stitch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				FCDBC6782A690AF30012D971 /* FeestApp.swift */,
-				FCDBC67A2A690AF30012D971 /* ContentView.swift */,
-				FCDBC67C2A690AF50012D971 /* Assets.xcassets */,
+				FCDBC6922A69156C0012D971 /* Pages */,
+				FCDBC6892A690BEB0012D971 /* Utils */,
 				FCDBC67E2A690AF50012D971 /* Preview Content */,
+				FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */,
 			);
 			path = Feest;
 			sourceTree = "<group>";
@@ -62,9 +79,63 @@
 		FCDBC67E2A690AF50012D971 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */,
+				FCDBC67C2A690AF50012D971 /* Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCDBC6892A690BEB0012D971 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC6AB2A725BDA0012D971 /* Theme */,
+				FCDBC6A32A6954B80012D971 /* Store */,
+				FCDBC68F2A69130E0012D971 /* Models */,
+				FCDBC6942A6917AF0012D971 /* API */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCDBC68F2A69130E0012D971 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC69E2A6928150012D971 /* RecipeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCDBC6922A69156C0012D971 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC67A2A690AF30012D971 /* RecipeView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		FCDBC6942A6917AF0012D971 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC6952A6919180012D971 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FCDBC6A32A6954B80012D971 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC6A42A6954D70012D971 /* RecipeStore.swift */,
+				FCDBC6A92A70BDA10012D971 /* RecipeStoring.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		FCDBC6AB2A725BDA0012D971 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC6AC2A725BF60012D971 /* Color.swift */,
+				FCDBC6B02A725CF00012D971 /* ColorTokens.swift */,
+				FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = Feest;
+			packageProductDependencies = (
+				FCDBC6872A690BDA0012D971 /* Stitch */,
+			);
 			productName = Feest;
 			productReference = FCDBC6752A690AF30012D971 /* Feest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = FCDBC66C2A690AF30012D971;
+			packageReferences = (
+				FCDBC6862A690BDA0012D971 /* XCRemoteSwiftPackageReference "stitch" */,
+			);
 			productRefGroup = FCDBC6762A690AF30012D971 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCDBC67B2A690AF30012D971 /* ContentView.swift in Sources */,
+				FCDBC67B2A690AF30012D971 /* RecipeView.swift in Sources */,
+				FCDBC69F2A6928150012D971 /* RecipeModel.swift in Sources */,
+				FCDBC6B32A736F5B0012D971 /* BackgroundWrapper.swift in Sources */,
+				FCDBC6AD2A725BF60012D971 /* Color.swift in Sources */,
+				FCDBC6962A6919180012D971 /* API.swift in Sources */,
 				FCDBC6792A690AF30012D971 /* FeestApp.swift in Sources */,
+				FCDBC6AA2A70BDA10012D971 /* RecipeStoring.swift in Sources */,
+				FCDBC6A52A6954D70012D971 /* RecipeStore.swift in Sources */,
+				FCDBC6B12A725CF00012D971 /* ColorTokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCDBC6862A690BDA0012D971 /* XCRemoteSwiftPackageReference "stitch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/entrhq/stitch";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCDBC6872A690BDA0012D971 /* Stitch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCDBC6862A690BDA0012D971 /* XCRemoteSwiftPackageReference "stitch" */;
+			productName = Stitch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCDBC66D2A690AF30012D971 /* Project object */;
 }
