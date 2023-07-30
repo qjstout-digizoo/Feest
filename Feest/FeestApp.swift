@@ -12,14 +12,29 @@ import SwiftUI
 struct FeestApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView(view: RecipeView())
+            RootView(view: RecipeListView())
         }
     }
 }
 
 func RootView(view: some View) -> some View {
     BackgroundColor {
-        view
+        VStack {
+            Text("Feest")
+                .frame(
+                    maxWidth: .infinity,
+                    alignment: .leading
+                )
+                .padding(.leading)
+                .font(.title)
+                .italic()
+                .foregroundColor(.accent)
+            Divider()
+                .padding()
+                .frame(width: 320.0, height: 1.0)
+                .background(Color.headings)
+            view
+        }
     }
     .frame(
         maxWidth: .infinity,

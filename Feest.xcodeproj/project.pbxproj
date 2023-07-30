@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FCDBC6792A690AF30012D971 /* FeestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6782A690AF30012D971 /* FeestApp.swift */; };
-		FCDBC67B2A690AF30012D971 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC67A2A690AF30012D971 /* RecipeView.swift */; };
+		FCDBC67B2A690AF30012D971 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC67A2A690AF30012D971 /* RecipeListView.swift */; };
 		FCDBC67D2A690AF50012D971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDBC67C2A690AF50012D971 /* Assets.xcassets */; };
 		FCDBC6802A690AF50012D971 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */; };
 		FCDBC6882A690BDA0012D971 /* Stitch in Frameworks */ = {isa = PBXBuildFile; productRef = FCDBC6872A690BDA0012D971 /* Stitch */; };
@@ -19,12 +19,14 @@
 		FCDBC6AD2A725BF60012D971 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6AC2A725BF60012D971 /* Color.swift */; };
 		FCDBC6B12A725CF00012D971 /* ColorTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B02A725CF00012D971 /* ColorTokens.swift */; };
 		FCDBC6B32A736F5B0012D971 /* BackgroundWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */; };
+		FCDBC6B82A75F8600012D971 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B72A75F8600012D971 /* Loader.swift */; };
+		FCDBC6BA2A75FD090012D971 /* RecipeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBC6B92A75FD090012D971 /* RecipeDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCDBC6752A690AF30012D971 /* Feest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDBC6782A690AF30012D971 /* FeestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeestApp.swift; sourceTree = "<group>"; };
-		FCDBC67A2A690AF30012D971 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		FCDBC67A2A690AF30012D971 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		FCDBC67C2A690AF50012D971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCDBC6952A6919180012D971 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		FCDBC6AC2A725BF60012D971 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FCDBC6B02A725CF00012D971 /* ColorTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTokens.swift; sourceTree = "<group>"; };
 		FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWrapper.swift; sourceTree = "<group>"; };
+		FCDBC6B72A75F8600012D971 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		FCDBC6B92A75FD090012D971 /* RecipeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			children = (
 				FCDBC6782A690AF30012D971 /* FeestApp.swift */,
 				FCDBC6922A69156C0012D971 /* Pages */,
+				FCDBC6B62A75F84C0012D971 /* Components */,
 				FCDBC6892A690BEB0012D971 /* Utils */,
 				FCDBC67E2A690AF50012D971 /* Preview Content */,
 				FCDBC67F2A690AF50012D971 /* Preview Assets.xcassets */,
@@ -106,7 +111,8 @@
 		FCDBC6922A69156C0012D971 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				FCDBC67A2A690AF30012D971 /* RecipeView.swift */,
+				FCDBC67A2A690AF30012D971 /* RecipeListView.swift */,
+				FCDBC6B92A75FD090012D971 /* RecipeDetailsView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -136,6 +142,14 @@
 				FCDBC6B22A736F5B0012D971 /* BackgroundWrapper.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		FCDBC6B62A75F84C0012D971 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBC6B72A75F8600012D971 /* Loader.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,14 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCDBC67B2A690AF30012D971 /* RecipeView.swift in Sources */,
+				FCDBC67B2A690AF30012D971 /* RecipeListView.swift in Sources */,
 				FCDBC69F2A6928150012D971 /* RecipeModel.swift in Sources */,
 				FCDBC6B32A736F5B0012D971 /* BackgroundWrapper.swift in Sources */,
 				FCDBC6AD2A725BF60012D971 /* Color.swift in Sources */,
+				FCDBC6B82A75F8600012D971 /* Loader.swift in Sources */,
 				FCDBC6962A6919180012D971 /* API.swift in Sources */,
 				FCDBC6792A690AF30012D971 /* FeestApp.swift in Sources */,
 				FCDBC6AA2A70BDA10012D971 /* RecipeStoring.swift in Sources */,
 				FCDBC6A52A6954D70012D971 /* RecipeStore.swift in Sources */,
+				FCDBC6BA2A75FD090012D971 /* RecipeDetailsView.swift in Sources */,
 				FCDBC6B12A725CF00012D971 /* ColorTokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
